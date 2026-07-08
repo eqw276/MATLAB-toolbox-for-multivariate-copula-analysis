@@ -1,0 +1,26 @@
+================================================================================ 
+MARGINAL DISTRIBUTIONS 
+================================================================================ 
+COMPREHENSIVE CORRELATION STATISTICS (Runoff vs Sediment) 
+
+         Period          Correlation Type     Coefficient         p-value   Significant at 5%?
+   All (Annual)              Kendall rank          0.5376          0.0000                  Yes
+                    Spearman's rank-order          0.7222          0.0000                  Yes
+                   Pearson product-moment          0.8702          0.0000                  Yes
+-------------------------------------------------------------------------------- 
+  Wet (May-Oct)              Kendall rank          0.4388          0.0008                  Yes
+                    Spearman's rank-order          0.5867          0.0007                  Yes
+                   Pearson product-moment          0.9540          0.0000                  Yes
+-------------------------------------------------------------------------------- 
+  Dry (Nov-Apr)              Kendall rank          0.6361          0.0000                  Yes
+                    Spearman's rank-order          0.8199          0.0000                  Yes
+                   Pearson product-moment          0.6330          0.0002                  Yes
+                                                                       
+
+Evaluate fit of marginal distributions to variables 
+
+                      Fitted distribution           Par 1 name          Par 1 value           Par 2 name          Par 2 value           Par 3 name          Par 3 value           Par 4 name          Par 4 value    Chi square gof test that data is drawn from dist at 5% significance         KS_Statistic            KS_PValue
+Variable 1                    loglogistic                   mu               2.8528                sigma               0.2782                  NaN                  NaN                  NaN                  NaN                                                               Accepted               0.0713               0.8987
+Variable 2             generalized pareto                    k               0.7616                sigma               0.3314                theta               0.0648                  NaN                  NaN                                                               Accepted               0.1030               0.5151
+                                                                       
+

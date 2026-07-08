@@ -1,0 +1,98 @@
+================================================================================ 
+MARGINAL DISTRIBUTIONS 
+================================================================================ 
+Evaluate dependence between the two input variables 
+
+      Correlation type        Correlation Coefficient              p value             Significant at 5%?
+          Kendall rank                         0.4000               0.0000                            Yes 
+ Spearman's rank-order                         0.5386               0.0000                            Yes 
+Pearson product-moment                         0.6326               0.0000                            Yes 
+                                                                       
+
+Evaluate fit of marginal distributions to variables 
+
+                      Fitted distribution           Par 1 name          Par 1 value           Par 2 name          Par 2 value           Par 3 name          Par 3 value           Par 4 name          Par 4 value    Chi square gof test that data is drawn from dist at 5% significance         KS_Statistic            KS_PValue
+Variable 1                 tlocationscale                   mu              -0.5474                sigma              10.0011                   nu               2.1495                  NaN                  NaN                                                               Accepted               0.0324               0.9723
+Variable 2                 tlocationscale                   mu              -0.1905                sigma               0.6643                   nu               0.6117                  NaN                  NaN                                                               Rejected               0.0698               0.2348
+                                                                       
+
+================================================================================ 
+COPULA JOINT PROBABILITY DISTRIBUTIONS 
+================================================================================ 
+Sort copulas based on different criteria 
+
+Rank       Max-Likelihood                  AIC                  BIC 
+   1     Fischer-Hinzmann     Fischer-Hinzmann     Fischer-Hinzmann 
+   2          Roch-Alegre                  Joe                  Joe 
+   3                  Joe          Roch-Alegre                 Burr 
+   4                 Burr                 Burr          Roch-Alegre 
+   5             Galambos             Galambos             Galambos 
+   6                  BB5               Gumbel               Gumbel 
+   7                 Tawn                  BB5                  BB5 
+   8               Gumbel                  BB1                  BB1 
+   9                  BB1                 Tawn        Marshal-Olkin 
+  10        Marshal-Olkin        Marshal-Olkin                    t 
+  11                    t                    t                 Tawn 
+  12             Gaussian             Gaussian             Gaussian 
+  13         Cuadras-Auge         Cuadras-Auge         Cuadras-Auge 
+  14             Plackett             Plackett             Plackett 
+  15                Frank                Frank                Frank 
+  16               Nelsen               Nelsen               Nelsen 
+  17      Linear-Spearman      Linear-Spearman      Linear-Spearman 
+  18           Shih-Louis           Shih-Louis           Shih-Louis 
+  19              Clayton              Clayton              Clayton 
+  20                  AMH                  AMH                  AMH 
+  21                  FGM                  FGM                  FGM 
+  22         Fischer-Kock         Fischer-Kock              Raftery 
+  23              Raftery              Raftery         Fischer-Kock 
+  24                Cubic                Cubic                Cubic 
+  25         Independence         Independence         Independence 
+
+ 
+Estimated copula parameters 
+
+      Copula Name      RMSE       NSE          Par#1-Local  Par#2-Local  Par#3-Local           Par#1-MCMC         95%-Par#1-Unc-Range   Par#2-MCMC         95%-Par#2-Unc-Range   Par#3-MCMC         95%-Par#3-Unc-Range  UpperTailDependence  LowerTailDependence
+         Gaussian    0.9210    0.9429               0.6025          NaN          NaN               0.5504         [  0.4844   0.6103]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+                t    0.9008    0.9454               0.5727     155.4948          NaN               0.5550         [  0.4785   0.6143]       0.4951         [  0.1662  32.8264]          NaN         [     NaN      NaN]               0.5991               0.5991
+          Clayton    0.9845    0.9348               0.9777          NaN          NaN               1.0844         [  0.8565   1.3857]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.5277
+            Frank    0.9431    0.9402               5.0460          NaN          NaN               3.3505         [  2.7488   3.9764]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+           Gumbel    0.8938    0.9463               1.4129          NaN          NaN               1.5859         [  1.4707   1.7292]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.4518               0.0000
+     Independence    1.3124    0.8842                  NaN          NaN          NaN                  NaN         [     NaN      NaN]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]                  NaN                  NaN
+              AMH    0.9855    0.9347               0.9954          NaN          NaN               0.9954         [  0.8653   0.9981]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+              Joe    0.8744    0.9486               2.0305          NaN          NaN               2.0304         [  1.8557   2.2524]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.5931               0.0000
+              FGM    0.9975    0.9331               1.0000          NaN          NaN               1.0000         [  0.9153   0.9993]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+         Plackett    0.9366    0.9410               4.9988          NaN          NaN               4.9986         [  3.9811   6.8226]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+     Cuadras-Auge    0.9282    0.9421               0.5183          NaN          NaN               0.5183         [  0.4514   0.5846]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0001
+          Raftery    1.0033    0.9323               0.4406          NaN          NaN               0.4407         [  0.3771   0.5003]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0060               0.0000
+       Shih-Louis    0.9457    0.9398               0.4441          NaN          NaN               0.4442         [  0.3787   0.5094]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+  Linear-Spearman    0.9457    0.9398               0.4441          NaN          NaN               0.4441         [  0.3738   0.5057]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0020
+            Cubic    1.2734    0.8909               2.0000          NaN          NaN               2.0000         [  0.7200   1.9926]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0001
+             Burr    0.8797    0.9480               0.8721          NaN          NaN               0.8721         [  0.7395   1.0776]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+           Nelsen    0.9431    0.9402              30.1337          NaN          NaN               3.3507         [  2.8359   4.0478]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0046               0.0000
+         Galambos    0.8926    0.9464               0.8678          NaN          NaN               0.8678         [  0.7613   0.9944]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN]               0.0000               0.0000
+    Marshal-Olkin    0.8999    0.9455               3.5642       0.3376          NaN               1.1234         [  0.8656   1.6655]       0.4033         [  0.3490   0.4461]          NaN         [     NaN      NaN]               0.0000               0.0072
+ Fischer-Hinzmann    0.8250    0.9542               0.9999     -34.2464          NaN               0.9999         [  0.9777   0.9998]     -34.9106         [-32.8360 -14.1974]          NaN         [     NaN      NaN]               0.0000               0.0000
+      Roch-Alegre    0.8736    0.9487               0.0002       2.0939          NaN               0.0029         [  0.0065   0.5633]       2.0725         [  1.7664   2.1879]          NaN         [     NaN      NaN]               0.0000               0.0000
+     Fischer-Kock    0.9977    0.9331               1.0000       1.0000          NaN               1.0018         [  1.0021   1.1957]       0.9996         [  0.8977   0.9992]          NaN         [     NaN      NaN]               0.0052               0.0000
+              BB1    0.8939    0.9463               0.0001       1.5857          NaN               0.0008         [  0.0038   0.2571]       1.5797         [  1.4078   1.6879]          NaN         [     NaN      NaN]               0.4492               0.0000
+              BB5    0.8926    0.9464               1.0009       0.8663          NaN               1.0034         [  1.0073   1.6739]       0.8593         [  0.0316   0.9047]          NaN         [     NaN      NaN]               0.0047               0.4476
+             Tawn    0.8937    0.9463               1.0000       0.8443       1.6943               0.9899         [  0.6580   0.9950]       0.8853         [  0.3693   0.9859]       1.6661         [  1.5207  33.9010]               0.4286               0.4792
+
+ 
+WARNING(s) 
+Second parameter of t copula is degree of freedom 
+Estimated degree of freedom for t copula is >25. You may consider switching to Gaussian copula in this case. 
+One (of the) parameter(s) of                 t copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of            Gumbel copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of               AMH copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of               FGM copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of             Cubic copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of              Burr copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of          Galambos copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of     Marshal-Olkin copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of  Fischer-Hinzmann copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of       Roch-Alegre copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of      Fischer-Kock copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of               BB1 copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of               BB5 copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of              Tawn copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
